@@ -10,6 +10,7 @@ if(isset($_POST['submit'])){
 
    if($result){
       echo "<script>alert('Task Added Successfuly!')</script>";
+      echo "<script>window.open('index.php', '_self')</script>";
    }  else {
       echo "Error" . mysqli_connect_error($con);
    }
