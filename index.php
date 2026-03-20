@@ -43,7 +43,7 @@ include './config/connect.php';
                } else {
                   echo 'Completed';
                }
-
+               echo '<a href="delete.php?deleteid=' . $id . '" onclick="return confirm(\'Are you sure you want to delete this task?\')">Delete</a>';
                echo '</td></tr>'; // Close the row here
             }
          }
